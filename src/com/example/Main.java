@@ -13,7 +13,8 @@ public class Main {
             "1. Penjumlahan \n" +
             "2. Pengurangan \n" +
             "3. Perkalian \n" +
-            "4. Pembagian \n"
+            "4. Pembagian \n" +
+            "5. Modulus (sisa bagi)"
         );
 
         Scanner myObj = new Scanner(System.in); // Scanner object
@@ -44,6 +45,10 @@ public class Main {
             case 4 :
                 result = angka1 / angka2;
                 System.out.println("Hasil pembagian dari " + angka1 + " / " + angka2 + " = " + result);
+                break;
+            case 5 :
+                result = angka1 % angka2;
+                System.out.println("Hasil modulus dari " + angka1 + " % " + angka2 + " = " + result);
                 break;
             default:
                 System.out.println("Operasi tidak sesuai");
